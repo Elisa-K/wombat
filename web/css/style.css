@@ -1,0 +1,47 @@
+body{
+	width: 100%;
+	background-color: #007ced;
+	background: linear-gradient(to bottom, #007ced 1%,#cce7ff 100%);
+}
+
+.page{
+	overflow-x: hidden;
+		  position: relative;
+  height: -webkit-fill-available;
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0 200px,
+              url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+              url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px;
+	animation: wind 20s linear infinite;
+}
+.jumbotron{
+	background: none;
+}
+
+.header-block{
+	display: flex;
+	justify-content: space-between;
+}
+@keyframes wind{
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
+  }
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+  }
+
+}
+
+}
+
+.header-block{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+.header-block-img img{
+	box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
+}
+
+
