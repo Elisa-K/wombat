@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Les Wombats</title>
+	<title>Le Wombat Game</title>
 	<!-- Bootstrap -->
     <link href="web/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -18,21 +18,31 @@
 </head>
 <body>
 <div class="page">
-<div class="jumbotron jumbotron-fluid">
+
   <div class="container">
   	<div class="header-block">
   		<div class="header-block-text">
-  			<h1 class="display-3">Le Wombat</h1>
-    		<p class="lead">Un curieux animal d'australie !</p>
+  			<h1 class="display-3">Le Wombat Game</h1>
+    		
   		</div>
   		<div class="header-block-img">
-  			<img src="web/img/wombat-cucu.gif" class="wow SlideInRight animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: slideInRight;">
+  			<img src="web/img/wombat-cucu.gif" class="img-fluid wow SlideInRight animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: slideInRight;">
+					<div class="game">
+		  <div class="counter" id= "counter">00s</div>
+		  <div class="score">
+		    00
+		  </div>
+		</div>
   		</div>
     	
   	</div>
     
   </div>
-</div>
+
+
+
+
+
 </div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -43,5 +53,6 @@
     <script src="web/js/wow.js"></script>
 
     <script src="web/js/script.js"></script>
+    <script src="web/js/game.js"></script>
 </body>
 </html>

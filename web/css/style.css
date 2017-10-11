@@ -14,11 +14,8 @@ body{
               url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px;
 	animation: wind 20s linear infinite;
 }
-.jumbotron{
-	background: none;
-}
 
-.header-block{
+.header-block-img{
 	display: flex;
 	justify-content: space-between;
 }
@@ -40,8 +37,60 @@ body{
 	color: white;
 }
 
+.header-block-text{
+	text-align: center;
+	margin-bottom: 50px;
+}
 .header-block-img img{
 	box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
+	width: 300px;
+	height: 180px;
+	margin: auto;
 }
 
+.game{
+  background: #efefef;
+  width:60%;
+  height:500px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .22);
+}
 
+.score{
+  font-size: 330px;
+  z-index: 20;
+  font-family: arial;
+  color: #d7e4d9;
+  user-select:none;
+  width:100%;
+  text-align:center;
+}
+
+.box{
+  
+  width: 100px;
+  height:100px;
+  position:absolute;
+  top: -150px;
+  transition: transform 1.5s linear;
+  cursor: pointer;
+  z-index:100;
+}
+
+.move{
+   transform:translateY(120vh);
+}
+
+.counter{
+  width:100%;
+  margin: 0 auto;
+  text-align:center;
+  font-family:arial;
+  color:red;
+  font-weight:bold;
+  padding-top:10px;
+  font-size:20px;
+  position:relative;
+  z-index:9999;
+}
