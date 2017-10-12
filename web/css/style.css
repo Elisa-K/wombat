@@ -50,7 +50,6 @@ body{
 
 .game{
   background: #efefef;
-  width:60%;
   height:500px;
   position: relative;
   overflow: hidden;
@@ -93,4 +92,10 @@ body{
   font-size:20px;
   position:relative;
   z-index:9999;
+}
+
+@media(max-width:768px){
+	.game{
+		margin-top: 50px;
+	}
 }
